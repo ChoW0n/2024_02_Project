@@ -10,7 +10,7 @@ public class PlayerAnimationManager : MonoBehaviour
     //애니메이터 파라미터 이름들을 상수로 정의
     private const string PARAM_IS_MOVEING = "IsMoving";
     private const string PARAM_IS_RUNNING = "IsRunning";
-    private const string PARAM_IS_JUMPING = "IsJummping";
+    private const string PARAM_IS_JUMPING = "IsJumping";
     private const string PARAM_IS_FALLING = "IsFalling";
     private const string PARAM_IS_ATTACK_TRIGGER = "Attack";
 
