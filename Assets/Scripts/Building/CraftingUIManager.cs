@@ -28,7 +28,7 @@ public class CraftingUIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        closeButton.onClick.AddListener(() => HideUI());
     }
 
     // Update is called once per frame

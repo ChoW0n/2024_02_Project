@@ -44,7 +44,7 @@ public class SurivivalStats : MonoBehaviour
     {
         if (isGameOver || isPaused) return;
 
-        currentSuitDurability  = Mathf.Min(0, currentSuitDurability - havestingDamage);     //0값 이하로 안떨어지게 한다.
+        currentSuitDurability  = Mathf.Max(0, currentSuitDurability - havestingDamage);     //0값 이하로 안떨어지게 한다.
         CheckDeath();
     }
 
@@ -52,7 +52,7 @@ public class SurivivalStats : MonoBehaviour
     {
         if (isGameOver || isPaused) return;
 
-        currentSuitDurability = Mathf.Min(0, currentSuitDurability - craftingDamage);     //0값 이하로 안떨어지게 한다.
+        currentSuitDurability = Mathf.Max(0, currentSuitDurability - craftingDamage);     //0값 이하로 안떨어지게 한다.
         CheckDeath();
     }
 
